@@ -49,16 +49,16 @@ public class Assignment_Part1
                 	System.out.print("Enter the number > ");
                     number = sc.nextInt();
                     result = FirstDigit(number);
-                    if(result == -1)
-                    	System.out.println("There can't be a 2nd digit in a single digit number");
-                    else
-                    	System.out.println("The second digit of " + number + " is " + result);
+                    System.out.println("The first digit of " + number + " is " + result);
                     break;
                 case 3:
                 	System.out.print("Enter the number > ");
                     number = sc.nextInt();
                     result = SecondDigit(number);
-                    System.out.println("The first digit of " + number + " is " + result);
+                    if(result == -1)
+                    	System.out.println("There can't be a 2nd digit in a single digit number");
+                    else
+                    	System.out.println("The second digit of " + number + " is " + result);
                     break;
                 case 4:
                 	System.out.print("Enter a number > ");
