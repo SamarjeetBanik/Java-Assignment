@@ -49,7 +49,10 @@ public class Assignment_Part1
                 	System.out.print("Enter the number > ");
                     number = sc.nextInt();
                     result = FirstDigit(number);
-                    System.out.println("The first digit of " + number + " is " + result);
+                    if(result == -1)
+                    	System.out.println("There can't be a 2nd digit in a single digit number");
+                    else
+                    	System.out.println("The second digit of " + number + " is " + result);
                     break;
                 case 3:
                 	System.out.print("Enter the number > ");
@@ -174,11 +177,17 @@ public class Assignment_Part1
     }
     static int SecondDigit(int number)
     {
-        while (number >= 100)
-        {
-            number = number / 10;
+        if(number >= 10 && number <= 99)
+        	return (number % 10);
+        else if(number <= 9)
+        	return -1;
+        else {
+        	while (number >= 100)
+            	{
+                	number = number / 10;
+            	}
+            	return (number % 10);
         }
-        return (number % 10);
     }
     static int SumOfDigits(int number)
     {
