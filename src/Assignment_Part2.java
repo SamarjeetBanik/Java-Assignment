@@ -142,6 +142,8 @@ public class Assignment_Part2
                 	System.out.println("Sorted array >");
                 	printArray(array);
                     break;
+		default:
+                	System.out.println("Wrong Input");
             }
             System.out.println("-----------------------------------------------------------------------");
             System.out.print("Do you want to Continue ? (Y/N) ? ");
