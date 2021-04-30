@@ -147,6 +147,8 @@ public class Assignment_Part1
                     result = SumOfExchangedConsecutiveDigits(number);
                     System.out.println("The sum of numbers formed by exchanging consecutive digits of " + number + " is " + result);
                     break;
+		default:
+                	System.out.println("Wrong Input");
             }
             System.out.println("-----------------------------------------------------------------------");
             System.out.print("Do you want to Continue ? (Y/N) ? ");
